@@ -3,10 +3,6 @@
     "",
     "\\assets",
     "\\assets\\js",
-    "\\assets\\sass\\base",
-    "\\assets\\sass\\components",
-    "\\assets\\sass\\layout",
-    "\\assets\\sass\\libs",
     "\\assets\\webfonts",
     "\\images"
   ],
