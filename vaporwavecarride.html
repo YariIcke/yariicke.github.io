@@ -1,88 +1,158 @@
 ﻿<!DOCTYPE HTML>
 <!--
-	Massively by HTML5 UP
+	Solid State by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>Portfolio by Yari Icke</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
+<head>
+	<title>Yari Icke</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
 	<body class="is-preload">
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
 
 				<!-- Header -->
 					<header id="header">
-						<a href="index.html" class="logo">Home</a>
+						<h1><a href="index.html">Yari Icke</a></h1>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
 					</header>
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-						</ul>
-						<ul class="icons">
-							<li><a href="https://www.linkedin.com/in/yariicke/" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-							<li><a href="https://github.com/YariIcke" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-						</ul>
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="generic.html">Generic</a></li>
+								<li><a href="elements.html">Elements</a></li>
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
 					</nav>
 
-				<!-- Main -->
-					<div id="main">
+				<!-- Wrapper -->
+					<section id="wrapper">
+						<header >
+							<div class="inner")>
+								<h2>Vaporwave Car Ride</h2>
+								<p>A bit of a deeper dive into the rendering side of game engines.</p>
 
-						<!-- Post -->
-							<section class="post">
-								<header class="major">
-									<h1>Vaporwave<br />
-									Car Ride</h1>
-									<p>This is my first serious attempt at rendering a video using Octane for unity and cinemachine.</p>
-								</header>
-
-								<ul class="actions special">
+								<div class="actions special">
 									<div class="container">
 										<iframe class="responsive-iframe" src="https://www.youtube.com/embed/59TGxvGgfcg" allowfullscreen></iframe>
 									</div>
-								</ul>
+								</div>
+							</div>
+						</header>
 
-								<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur sapien risus, commodo eget turpis at, elementum convallis enim turpis, lorem ipsum dolor sit amet nullam.</p>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus. Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum.</p>
-							</section>
+						<!-- Content -->
+							<div class="wrapper">
+								<div class="inner">
 
-					</div>
+									<h3 class="major">Octane Renderer and Unity</h3>
+									<p>
+										I have always been interested in the rendering side of game engines so this project seemed right up my ally. I made this render by using Octane for unity. The goal I had set for this project was ligting and reflections.
+										These are things that I think bring a scene to live.
+									</p>
+									<br />
+
+									<p>
+										<span class="image right"><img src="images/VaporwaveGrid.jpg" id="RightImgSize" /></span>
+										
+										First I placed all the models in the scene, made a grid texture (img) and set up the lighting.
+										After that I made a simple animation to make the wheels turn. Before I even started to work with the camera I made a shotlist so that i wouldn't get lost when setting up the camera angles.
+										Talking about setting up the camera angles... I set up those up by using the animation timeline and had the camera parented to the car so they would move at the same speed.
+									</p>
+
+									<p>
+										<span class="image left"><img src="images/ThumbnailCarRide.png" id="LeftImgSize" style="top: 0px"/></span>
+
+										The rendering was done by using the build in exporter that Octane offers. The camera settings were adjusted untill I thought it looked good.
+										This renderer uses path tracing to caculate the lighing and reflections. I set the sample size to 800 for relatively high fedelity lighting and not too long of a render time.
+										This renderer renders frame by frame and compiles it into the desired file format afterwards. After a few shortened renders to see if the camera settings were okay, 
+										I started the final render that you can see above.
+									</p>
+
+                                    <br />
+
+
+									<h3 class="major">Conclusion</h3>
+									<p>I have learned a lot about setting up camera angles, lighting and emission.
+									I still have some points that I could improve on. Mainly, managing to keep a clean work space by making a render pass for each shot. 
+									I also have to keep an eye on not going overboard with emission, in this project there are a few places where the emission is so bright it changes to white and all fidelity is lost in that area.
+                                    <br />
+									Over all I would call this project finished and a success!</p>
+
+									<section class="features">
+										<article>
+											<a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a>
+											<h3 class="major">Sed feugiat lorem</h3>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
+											<a href="#" class="special">Learn more</a>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/pic05.jpg" alt="" /></a>
+											<h3 class="major">Nisl placerat</h3>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
+											<a href="#" class="special">Learn more</a>
+										</article>
+									</section>
+
+								</div>
+							</div>
+
+					</section>
 
 				<!-- Footer -->
-					<footer id="footer">
-						<section class="split contact">
-							<section>
-								<h3>Email</h3>
-								<p>yari.icke@gmail.com</p>
-							</section>
-							<section>
-								<h3>Social</h3>
-								<ul class="icons alt">
-									<li><a href="https://www.linkedin.com/in/yariicke/" target="_blank" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
-									<li><a href="https://github.com/YariIcke" target="_blank" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+					<section id="footer">
+						<div class="inner">
+							<h2 class="major">Get in touch</h2>
+							<p>Do you want to know more about a project, or have any other question to ask me. Contact me by using the links or form below.</p>
+							<form action="contact.php" method="post">
+								<div class="fields">
+									<div class="field">
+										<label for="cf_name">Name</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field">
+										<label for="cf_email">Email</label>
+										<input type="email" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="cf_message" id="message" rows="4"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
 								</ul>
-							</section>
-						</section>
-					</footer>
-
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy; Yari Icke</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
-					</div>
+							</form>
+							<ul class="contact">
+								<li class="icon solid fa-phone">06 39591917</li>
+								<li class="icon solid fa-envelope"><a href="mailto: yari.icke@gmail.com"> yari.icke@gmail.com</a></li>
+								<li class="icon brands alt fa-linkedin"><a href="https://www.linkedin.com/in/yariicke/" target="_blank"> linkedin.com/yariicke</a></li>
+								<li class="icon brands alt fa-github"><a href="https://github.com/YariIcke" target="_blank"> github.com/YariIcke</a></li>
+								<li class="icon brands fa-instagram"><a href="https://www.instagram.com/yari_icke/" target="_blank"> instagram.com/yari_icke</a></li>
+							</ul>
+							<ul class="copyright">
+								<li>&copy; Untitled Inc. All rights reserved.</li><li>Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</section>
 
 			</div>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
