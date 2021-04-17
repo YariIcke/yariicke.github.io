@@ -1,8 +1,15 @@
 {
   "ExpandedNodes": [
     "",
+    "\\assets",
+    "\\assets\\js",
+    "\\assets\\sass\\base",
+    "\\assets\\sass\\components",
+    "\\assets\\sass\\layout",
+    "\\assets\\sass\\libs",
+    "\\assets\\webfonts",
     "\\images"
   ],
-  "SelectedNode": "\\VaporwaveCarRide.html",
+  "SelectedNode": "\\assets\\js\\main.js",
   "PreviewInSolutionExplorer": false
 }
