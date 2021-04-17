@@ -41,12 +41,16 @@
 				<!-- Wrapper -->
 					<section id="wrapper">
 						<header >
-							<div class="inner")>
-								<h2>Vaporwave Car Ride</h2>
-								<p>A bit of a deeper dive into the rendering side of game engines.</p>
-									<div class="iframe-container">
-										<iframe src="https://www.youtube.com/embed/59TGxvGgfcg" allowfullscreen></iframe>
-									</div>
+							<div class="inner">
+								<h2>Skybox(es)</h2>
+								<p>
+									I've always been fascinated by space and the atmosphere.<br />
+									So let's make some of those.
+								</p>
+								
+								<div class="iframe-container">
+									<iframe src="https://www.youtube.com/embed/_5i32nhRm9c" allowfullscreen>></iframe>
+								</div>
 							</div>
 						</header>
 
@@ -54,46 +58,43 @@
 							<div class="wrapper">
 								<div class="inner">
 
-									<h3 class="major">Octane Renderer and Unity</h3>
+									<h3 class="major">Skybox made with nodes</h3>
+
 									<p>
-										I have always been interested in the rendering side of game engines so this project seemed right up my ally. I made this render by using Octane for unity. The goal I had set for this project was lighting and reflections.
-										These are things that I think bring a scene to live.
+										<span class="image right">
+											<iframe src="https://youtube.com/embed/X3_M37ZPfFo" allowfullscreen id="RightVidSize"></iframe>
+										</span>
+
+										The first video is of a skybox that I made for SyncVR's "Medical Hypnosis" game. This was my first time trying to make a skybox so it seemed easier to make it with nodes rather than with code.
+										I started by making the actual sky gradient and moved on from there. Adding the additional elements as I went on. The video on the right shows what nodes I used and how I kept them organized.
+										The most difficult part of this shader was keeping track of what node did what. I tried my best to label all of them. In the future I will add more modulairity when making big shades.
+										I will also highlight connections that seperate each element.
 									</p>
+
+									<h3 class="major">Skybox made with code</h3>
+
+									<p>
+										<span class="image left">
+										<iframe src="https://youtube.com/embed/puC2BS3fB6c" allowfullscreen id="LeftImgSize" style="top: 0px" ></iframe>
+										</span>
+
+										Turned out that the VR device that I was developing this skybox for didn't work with the URP that Unity offers. So I tried my best remaking the shader into a HLSL code based shader.
+										I'd never tried coding a skybox before, so this would be an awesome learning experience. I quickly learned that making a skybox is very different than making a shader for a piece of geomatry.
+										You don't have any physical reference points. making a skybox was very abstract for me and helped me a lot with learning HLSL. The most difficult part of this project was getting the clouds to move
+										in a parabolic matter so that they didn't seem to "flat". After making this project i feel like i know a lot more about HLSL and how it's positioning works
+									</p>
+
 									<br />
 
-									<p>
-										<span class="image right"><img src="images/VaporwaveGrid.jpg" id="RightImgSize" /></span>
-										
-										First I placed all the models in the scene, made a grid texture (img) and set up the lighting.
-										After that I made a simple animation to make the wheels turn. Before I even started to work with the camera I made a shotlist so that i wouldn't get lost when setting up the camera angles.
-										Talking about setting up the camera angles... I set up those up by using the animation timeline and had the camera parented to the car so they would move at the same speed.
-									</p>
 
-									<p>
-										<span class="image left"><img src="images/ThumbnailCarRide.png" id="LeftImgSize" style="top: 0px"/></span>
-
-										The rendering was done by using the build in exporter that Octane offers. The camera settings were adjusted untill I thought it looked good.
-										This renderer uses path tracing to caculate the lighing and reflections. I set the sample size to 800 for relatively high fedelity lighting and not too long of a render time.
-										This renderer renders frame by frame and compiles it into the desired file format afterwards. After a few shortened renders to see if the camera settings were okay, 
-										I started the final render that you can see above.
-									</p>
-
-                                    <br />
-
-
-									<h3 class="major">Conclusion</h3>
-									<p>I have learned a lot about setting up camera angles, lighting and emission.
-									I still have some points that I could improve on. Mainly, managing to keep a clean work space by making a render pass for each shot. 
-									I also have to keep an eye on not going overboard with emission, in this project there are a few places where the emission is so bright it changes to white and all fidelity is lost in that area.
-                                    <br />
-									Over all I would call this project finished and a success!</p>
+									<h3 class="major">Check out my other projects</h3>
 
 									<section class="features">
 										<article>
-											<a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a>
-											<h3 class="major">Sed feugiat lorem</h3>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
-											<a href="#" class="special">Learn more</a>
+											<a href="vaporwavecar.html" class="image"><img src="images/ThumbnailCarRide.png" alt="" /></a>
+											<h3 class="major">Vaporwave Car Ride</h3>
+											<p>A bit of a deeper dive into the rendering side of game engines.</p>
+											<a href="vaporwavecar.html" class="special">Learn more</a>
 										</article>
 										<article>
 											<a href="#" class="image"><img src="images/pic05.jpg" alt="" /></a>
