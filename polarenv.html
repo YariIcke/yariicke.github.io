@@ -44,12 +44,12 @@
 							<div class="inner">
 								<h2>Skybox(es)</h2>
 								<p>
-									I've always been fascinated by space and the atmosphere.<br />
-									So let's make some of those.
+									I like winter and snow. So to get in the mood for winter I started working on this project.<br />
+									My goal is to make a realistic winter wonder land that I can keep on expanding while I learn.
 								</p>
 								
 								<div class="iframe-container">
-									<iframe src="https://www.youtube.com/embed/_5i32nhRm9c" allowfullscreen>></iframe>
+									<iframe src="https://www.youtube.com/embed/bOvfVEG0B4U" allowfullscreen>></iframe>
 								</div>
 							</div>
 						</header>
@@ -58,30 +58,37 @@
 							<div class="wrapper">
 								<div class="inner">
 
-									<h3 class="major">Skybox made with nodes</h3>
+									<h3 class="major">The ice</h3>
 
 									<p>
-										<span class="image right">
-											<iframe src="https://youtube.com/embed/X3_M37ZPfFo" allowfullscreen id="RightVidSize"></iframe>
-										</span>
+										<span class="image right"> <a href="images/IceStack.png" target="_blank"><img src="images/IceStack.png" id="RightImgSize"></a> </span>
 
-										The first video is of a skybox that I made for SyncVR's "Medical Hypnosis" application. This was my first time trying to make a skybox so it seemed easier to make it with nodes rather than with code.
-										I started by making the actual sky gradient and moved on from there. Adding the additional elements as I went on. The video on the right shows what nodes I used and how I kept them organized.
-										The most difficult part of this shader was keeping track of what node did what. I tried my best to label all of them. In the future I will add more modulairity when making big shades.
-										I will also highlight connections that seperate each element.
+										I guess this project could be seen as kind of chaotic, seeing as I don't have any clear goal or direction. All I want to do in this project is add seperate things that catch my eye
+										and merge them into an cohesive environment. The first thing I made is the ice. The idea behind the ice was that I wanted to make a shader with depth and obscured reflections.
+										The depth in the ice is made by layering an ice crack texture at a decreasing depth. The most interesting thing about this shader for me is the matte snow on the reflective ice.
+										I accomplished this by using with a specular map. I'd heared of them before but never knew how cool they could be.
 									</p>
 
-									<h3 class="major">Skybox made with code</h3>
+									<h3 class="major">The fire</h3>
 
 									<p>
-										<span class="image left">
-										<iframe src="https://youtube.com/embed/puC2BS3fB6c" allowfullscreen id="LeftImgSize" style="top: 0px" ></iframe>
-										</span>
+										<span class="image left"> <a href="images/FireSheet.png" target="_blank"><img src="images/FireSheet.png" id="LeftImgSize"></a> </span>
 
-										Turned out that the VR device that I was developing this skybox for didn't work with the URP that Unity offers. So I tried my best remaking the shader into a HLSL code based shader.
-										I'd never tried coding a skybox before, so this would be an awesome learning experience. I quickly learned that making a skybox is very different than making a shader for a piece of geomatry.
-										You don't have any physical reference points. making a skybox was very abstract for me and helped me a lot with learning HLSL. The most difficult part of this project was getting the clouds to move
-										in a parabolic matter so that they didn't seem to "flat". After making this project i feel like i know a lot more about HLSL and how it's positioning works
+										The fire that you can see in the first part of the video is made with hand drawn sprites. I am not much of an artist but as of late i've seen how powerful simple drawings can be
+										when used in particle systems. It's amazing that a black and white image can transform this much just by layering some effects. This element really helped me understand that
+										most particle systems are built on a base of pretty simple images.
+									</p>
+                                    <br />
+
+									<h3 class="major">The clouds</h3>
+
+									<p>
+										<span class="image right"> <a href="images/cloudsCode.png" target="_blank"><img src="images/cloudsCode.png" id="RightImgSize"></a> </span>
+
+										Clouds are pretty great in my opinion. You can see animals, cars, food or people withing them. Or... you can use an enmormous disk made up out of 100 000 tri's to create them.
+										Not the best decicion I later realized. But there's no denying that this was by far the easiest and most awesome way. Vertex displacement is a very powerful tool.
+										This project helped me understand that. This is the main premise the clouds function on. I also wanted to add a way of sinking into them. What I mean by that is.
+										I wanted to make objects interact with the clouds. Ultimately I accomplished this by determening the alpha based on the scene depth and camera position.
 									</p>
 
 									<br />
@@ -97,13 +104,10 @@
 											<a href="vaporwavecar.html" class="special">Learn more</a>
 										</article>
 										<article>
-											<a href="polarenv.html" class="image"><img src="images/pic05.jpg" alt="" /></a>
-											<h3 class="major">polar Environment</h3>
-											<p>
-												I like winter and snow. So to get in the mood for winter I started working on this project.<br />
-												My goal is to make a realistic winter wonder land that I can keep on expanding while I learn.
-											</p>
-											<a href="polarenv.html" class="special">Learn more</a>
+											<a href="#" class="image"><img src="images/SkyboxSquare.png" alt="" /></a>
+											<h3 class="major">Rozosho</h3>
+											<p>This is one of the bigges projects that i've worked on to date. 100 people, one game. This was my experience.</p>
+											<a href="#" class="special">Learn more</a>
 										</article>
 									</section>
 
