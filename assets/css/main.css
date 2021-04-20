@@ -3423,10 +3423,21 @@ html {
 	right: 0px;
 	top: 0px;
 	bottom: 0px;
+
+	/*Fade in opacity*/
+	opacity: 1;
+	transition: opacity .2s ease-in;
+	-moz-transition: opacity .2s ease-in;
+	-webkit-transition: opacity .2s ease-in;
+	-o-transition: opacity .2s ease-in;
 }
 
 	#RightImgSize:hover {
-		transform: scale(1.5);
+		opacity: 0.3;
+		transition: opacity .2s ease-out;
+		-moz-transition: opacity .2s ease-out;
+		-webkit-transition: opacity .2s ease-out;
+		-o-transition: opacity .2s ease-out;
 	}
 
 #RightVidSize {
@@ -3453,10 +3464,21 @@ html {
 	right: 0px;
 	top: 0px;
 	bottom: 0px;
+
+	/*Fade in opacity*/
+	opacity: 1;
+	transition: opacity .2s ease-in;
+	-moz-transition: opacity .2s ease-in;
+	-webkit-transition: opacity .2s ease-in;
+	-o-transition: opacity .2s ease-in;
 }
 
 	#LeftImgSize:hover {
-		transform:scale(1.5);
+		opacity: 0.3;
+		transition: opacity .2s ease-out;
+		-moz-transition: opacity .2s ease-out;
+		-webkit-transition: opacity .2s ease-out;
+		-o-transition: opacity .2s ease-out;
 	}
 
 #LeftVidSize {
