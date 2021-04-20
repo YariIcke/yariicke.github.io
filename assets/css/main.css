@@ -3465,7 +3465,7 @@ html {
 	top: 0px;
 	bottom: 0px;
 
-	/*Fade in opacity*/
+	/*Fade in opacity-*/
 	opacity: 1;
 	transition: opacity .2s ease-in;
 	-moz-transition: opacity .2s ease-in;
