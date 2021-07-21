@@ -105,9 +105,12 @@ html {
 	body {
 		background-color: #2e3141;
 		background-image: linear-gradient(to top, rgba(46, 49, 65, 0.9), rgba(46, 49, 65, 0.9)), url("../../images/code-wallpaper-4.png");
-		background-size: auto, cover;
-		background-attachment: fixed, fixed;
-		background-position: center, center;
+		background-size: auto,
+ cover;
+		background-attachment: fixed,
+ fixed;
+		background-position: center,
+ center;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -3416,9 +3419,9 @@ html {
 	object-fit: cover;
 	position: relative;
 	width: 100%;
-	max-width: 200px;
+	max-width: 400px;
 	height: auto;
-	max-height: 200px;
+	max-height: 400px;
 	left: 0px;
 	right: 0px;
 	top: 0px;
@@ -3457,9 +3460,9 @@ html {
 	object-fit: cover;
 	position: relative;
 	width: 100%;
-	max-width: 200px;
+	max-width: 400px;
 	height: auto;
-	max-height: 200px;
+	max-height: 400px;
 	left: 0px;
 	right: 0px;
 	top: 0px;
@@ -3707,8 +3710,10 @@ html {
 
 		#wrapper > header {
 			padding: 11em 3em 7.375em 3em ;
-			background-size: auto, cover;
-			background-position: center, 0% 0%;
+			background-size: auto,
+ cover;
+			background-position: center,
+ 0% 0%;
 			margin-bottom: -4.75em;
 		}
 
@@ -3722,7 +3727,8 @@ html {
 
 		#wrapper > header {
 			padding: 6.5em 2em 3em 2em ;
-			background-size: auto, 125%;
+			background-size: auto,
+ 125%;
 			margin-bottom: -2.5em;
 		}
 

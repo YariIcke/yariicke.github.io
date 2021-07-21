@@ -1,0 +1,180 @@
+﻿<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+	<title>Yari Icke</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">Yari Icke</a></h1>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="aboutme.html">About Me</a></li>
+								<li><a href="#footer">Contact</a></li>
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+						<header >
+							<div class="inner">
+								<h2>Royal Dunes</h2>
+								<p>
+									I wanted to learn more about making sand shaders and testing out the new volume options for Unity.
+								</p>
+								
+								<div class="iframe-container">
+									<iframe src="https://www.youtube.com/embed/AVXrlQzrA1s" allowfullscreen>></iframe>
+								</div>
+							</div>
+						</header>
+
+						<!-- Content -->
+							<div class="wrapper">
+								<div class="inner">
+
+									<h3 class="major">The Idea</h3>
+
+									<p>
+										<span class="image right"> <a href="images/Terrain.png" target="_blank"><img src="images/Terrain.png" id="RightImgSize"></a> </span>
+
+										I saw a tutorial from Alan Zucconi on <a href="https://www.alanzucconi.com/2019/10/08/journey-sand-shader-1/" target="_blank"> "A Journey Into Sand." </a> Where he recreated the sand shader from the indy game Journey. 
+										This is what set me on the path to making a desert environment. I started by roughley drawing out the shape I wanted using the Terrain tool.
+										After that I started to look into how I could make something similar.
+									</p>
+
+									<h3 class="major">Sand Shader: Making The Shape</h3>
+
+									<p>
+										<span class="image left"> <a href="images/DistortTerrain.png" target="_blank"><img src="images/DistortTerrain.png" id="LeftImgSize"></a> </span>
+
+										For the flat texture to look like sand it needs to have ripples, twists turns and grain. I started by getting a PerlinNoise and distorting it with some sine waves and rotate nodes.
+										After doing that, the material looked a little better but it was all one flat color. 
+
+									</p>
+                                    <br />
+
+									<h3 class="major">Sand Shader: Adding Color</h3>
+
+									<p>
+										<span class="image right"> <a href="images/TerrainColored.png" target="_blank"><img src="images/TerrainColored.png" id="RightImgSize"></a> </span>
+
+										I added color to the shader by blending the color for the high and the low parts of the sand with the black and white mask of the sand.
+										To add a little more detail to the material, I used a voronoi noise and added that on top of the colors.
+									</p>
+
+									<br />
+
+									<h3 class="major">Sand Shader: The Normals</h3>
+
+									<p>
+										<span class="image right"> <a href="images/TerrainColoredNormal.png" target="_blank"><img src="images/TerrainColoredNormal.png" id="RightImgSize"></a> </span>
+
+										At last the normals. They were created by using the NormalFromHeight node. Plugging that into a NormalStrength node and multiplying that by a NormalStrength float.
+										After doing all of that the sand shader was pretty much finished. I added some props from de ExampleAssets and started working on the fun stuff.
+									</p>
+
+									<br />
+
+									<h3 class="major">Environment: Density Volumes</h3>
+
+									<p>
+										<span class="image right"> <a href="images/DensityVolume.png" target="_blank"><img src="images/DensityVolume.png" id="RightImgSize"></a> </span>
+
+										To create the fog I mainly wanted to limit myself to using density volumes. I found that they can be extremely useful for good looks but are horribly inefficient when using them in game.
+										I set up the procedural skybox. Added a day-night cycle, and called it there.
+									</p>
+
+									<br />
+
+									<h3 class="major">Conclusion</h3>
+
+									<p>
+										<span class="image right"> <a href="images/DensityVolume.png" target="_blank"><img src="images/DensityVolume.png" id="RightImgSize"></a> </span>
+
+										The main roadblock I had with this project was not knowing when to stop adjusting sliders and just being happy with the setting where they were at. 
+										Ultimately it turned out fine but I wasted a lot of time adjusting subtle elements of the thader that ultimately I would either cut completely because they were too complicated for the time I had, or they made the shader way to crowded.
+										So for the next time I should probably first complete the entire shader and then start touching the slider to fine tune it.
+										This little project was a lot of fun and very nice to be able to keep practicing what I like.
+									</p>
+
+									<br />
+
+
+									<h3 class="major">Check out my other projects</h3>
+
+									<section class="features">
+										<article>
+											<a href="vaporwavecarride.html" class="image"><img src="images/ThumbnailCarRide.png" alt="" /></a>
+											<h3 class="major">Vaporwave Car Ride</h3>
+											<p>A bit of a deeper dive into the rendering side of game engines.</p>
+											<a href="vaporwavecarride.html" class="special">Learn more</a>
+										</article>
+										<article>
+											<a href="skybox.html" class="image"><img src="images/Skybox.png" alt="" /></a>
+											<h3 class="major">Skybox(es)</h3>
+											<p>
+												A skybox I made during my time at SyncVR.
+											</p>
+											<a href="skybox.html" class="special">Learn more</a>
+									</section>
+
+								</div>
+							</div>
+
+					</section>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="inner">
+							<h2 class="major">Get in touch</h2>
+							<p>Do you want to know more about a project, or have any other question to ask me. Contact me by using the links or form below.</p>
+							<ul class="contact">
+								<li class="icon solid fa-phone"> <a href="tel:0639591917"> 06 39 59 19 17</a></li>
+								<li class="icon solid fa-envelope"><a href="mailto: yari.icke@gmail.com"> yari.icke@gmail.com</a></li>
+								<li class="icon brands alt fa-linkedin"><a href="https://www.linkedin.com/in/yariicke/" target="_blank"> linkedin.com/yariicke</a></li>
+								<li class="icon brands alt fa-github"><a href="https://github.com/YariIcke" target="_blank"> github.com/YariIcke</a></li>
+								<li class="icon brands fa-instagram"><a href="https://www.instagram.com/yari_icke/" target="_blank"> instagram.com/yari_icke</a></li>
+							</ul>
+							<ul class="copyright">
+								<li>&copy; Yari Icke. All rights reserved.</li><li>Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
